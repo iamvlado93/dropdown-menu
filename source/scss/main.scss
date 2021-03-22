@@ -1,2 +1,4 @@
-@import './components/background';
-@import './components/header'
+@import './config/mixins';
+
+@import './components/desktop';
+@import './components/media';

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+	@include default;
+}
+
+body{
+	@include background;
+}
+
+.wrapper {
+	width: 100vw;
+    height: 100vh;
+}
+
+.mega_menu {
+    height: 10vh;
+    display: none;
+}
+
+nav {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    line-height: 40px;
+    padding: 8px 25px;
+}
+
+nav label {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 22px;
+    display: block;
+    cursor: pointer;
+}
+
+nav label:hover {
+    @include cyan;
+}
+
+.button span {
+    float: right;
+    line-height: 35px;
+}
+
+nav ul {
+    @include absolute;
+    background-color: rgba(0, 0, 0, 0.61);
+    list-style: none;
+    width: 100%;
+    left: 0;
+    display: none;
+}
+
+[id^=btn]:checked + ul {
+    display: block;
+}
+
+nav ul li {
+    line-height: 40px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+nav ul li label {
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+nav ul li a:hover {
+    @include cyan;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul ul {
+    position: static;
+}
+
+nav ul ul li {
+    line-height: 30px;
+    padding-left: 30px;
+    border-bottom: none;
+}
+
+nav ul ul li a {
+    color: rgb(165, 165, 165);
+    font-size: 17px;
+}
+
+nav ul li span {
+    font-size: 20px;
+    float: right;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+input {
+    display: none;
+}
+
+

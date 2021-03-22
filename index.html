@@ -11,70 +11,141 @@
 </head>
 
 <body>
-    <header>
-        <nav id='navbar' class="navbar">
-            <li><a href="#">Элемент 1</a></li>
-            <div class="d">
-                <button class="d-btn">Элемент 2<i id='arrow' class="fas fa-caret-down"></i></button>
-                <div class="d-content">
-                    <div class="row">
-                        <div class="column">
-                            <h3><a href="#">Элемент 2.1</a></h3>
-                        </div>
-                        <div class="column">
-                            <h3><a href="#">Элемент 2.2<i id='arrow' class="fas fa-caret-down"></i></a></h3>
-                            <ul class="column__one">
-                                <li><a href="">Элемент 2.2.1</a></li>
-                                <li><a href="">Элемент 2.2.2</a></li>
-                                <li><a href="">Элемент 2.2.3</a></li>
-                            </ul>   
-                        </div>
-                        <div class="column">
-                            <h3><a href="#">Элемент 2.3</a></h3>
-                        </div>
-                        <div class="column">
-                            <h3><a href="#">Элемент 2.4<i id='arrow' class="fas fa-caret-down"></i></a></h3>
-                            <ul class="column__two">
-                                <li><a href="">Элемент 2.4.1</a></li>
-                                <li><a href="">Элемент 2.4.2</a></li>
-                                <li><a href="">Элемент 2.4.3</a></li>
-                                <li><a href="">Элемент 2.4.4</a></li>
-                                <li><a href="">Элемент 2.4.5</a></li>
-                                <li><a href="">Элемент 2.4.6</a></li>
-                                <li><a href="">Элемент 2.4.7</a></li>
+    <div class="wrapper">
+        <nav>
+            <label for ="btn-1" class="button">Menu
+                <span class="fas fa-caret-down"></span>
+            </label>
+            <input type='checkbox' id='btn-1'>
+            <ul class='menu'>
+                <li><a href='#'>Элемент 1</a></li>
+                <li>
+                    <label for='btn-2' class="first">Элемент 2
+                        <span class="fas fa-caret-down"></span>
+                    </label>
+                    <input type='checkbox' id='btn-2'>
+                    <ul>
+                        <li><a href='#'>Элемент 2.1</a></li>
+                        <li>
+                            <label for='btn-3' class="first">Элемент 2.2
+                                <span class="fas fa-caret-down"></span>
+                            </label>
+                            <input type='checkbox' id='btn-3'>
+                            <ul>
+                                <li><a href='#'>Элемент 2.2.2</a></li>
+                                <li><a href='#'>Элемент 2.2.3</a></li>
+                                <li><a href='#'>Элемент 2.2.4</a></li>
                             </ul>
-                        </div>
-                        <div class="column">
-                            <h3><a href="#">Элемент 2.5</a></h3>
-                        </div>
-                        <div class="column">
-                            <h3><a href="#">Элемент 2.6</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <li><a href="#">Элемент 3</a></li>
-            <div class="d">
-                <button class="d-btn">Элемент 4<i id='arrow' class="fas fa-caret-down"></i></button>
-                <div class="d-content">
-                    <div class="row">
-                        <div class="column">
-                            <li><a href="">Элемент 4.1</a></li>
-                        </div>
-                        <div class="column">
-                            <li><a href="">Элемент 4.2</a></li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <li><a href="#">Элемент 5</a></li>
-            <li><a href="#">Элемент 6</a></li>
+                        </li>
+                        <li><a href='#'>Элемент 2.3</a></li>
+                        <li>
+                            <label for='btn-4' class="first">Элемент 2.4
+                                <span class="fas fa-caret-down"></span>
+                            </label>
+                            <input type='checkbox' id='btn-4'>
+                            <ul>
+                                <li><a href='#'>Элемент 2.4.1</a></li>
+                                <li><a href='#'>Элемент 2.4.2</a></li>
+                                <li><a href='#'>Элемент 2.4.3</a></li>
+                                <li><a href='#'>Элемент 2.4.4</a></li>
+                                <li><a href='#'>Элемент 2.4.5</a></li>
+                                <li><a href='#'>Элемент 2.4.6</a></li>
+                                <li><a href='#'>Элемент 2.4.7</a></li>
+                            </ul>
+                        <li><a href='#'>Элемент 2.5</a></li>
+                        <li><a href='#'>Элемент 2.6</a></li>
+                    </ul>
+                </li>
+                <li><a href='#'>Элемент 3</a></li>
+                <li>
+                    <label for='btn-5' class="second">Элемент 4
+                        <span class="fas fa-caret-down"></span>
+                    </label>
+                    <input type='checkbox' id='btn-5'>
+                    <ul>
+                        <li><a href='#'>Элемент 4.1</a></li>
+                        <li><a href='#'>Элемент 4.2</a></li>
+                    </ul>
+                </li>
+                <li><a href='#'>Элемент 5</a></li>
+                <li><a href='#'>Элемент 6</a></li>
+            </ul>
         </nav>
-        <div id='burger'>
-            <img src="https://iamvlado93.github.io/dropdown-menu/source/img/burger.jpg">
+        <div class="mega_menu">
+            <ul>
+                <li><a href="#">Элемент 1</a></li>
+                <li><a href="#">Элемент 2</a>
+                    <div class="sub_menu">
+                        <div class="col">
+                            <p><a href="#">Элемент 2.1</a></p>
+                        </div>
+                        <div class="col">
+                            <p><a href="#">Элемент 2.2</a></p>
+                            <div class="sub_menu-second">
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.2.1</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.2.2</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.2.3</a></p>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col">
+                            <p><a href="#">Элемент 2.3</a></p>
+                        </div>
+                        <div class="col">
+                            <p><a href="#">Элемент 2.4</a></p>
+                            <div class="sub_menu-second">
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.4.1</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.4.2</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.4.3</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.4.4</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.4.5</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.4.6</a></p>
+                                </div>
+                                <div class="col">
+                                    <p><a href="#">Элемент 2.4.7</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p><a href="#">Элемент 2.5</a></p>
+                        </div>
+                        <div class="col">
+                            <p><a href="#">Элемент 2.6</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Элемент 3</a></li>
+                <li><a href="#">Элемент 4</a>
+                    <div class="sub_menu">
+                        <div class="col">
+                            <p><a href="#">Элемент 4.1</a></p>
+                        </div>
+                        <div class="col">
+                            <p><a href="#">Элемент 4.2</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Элемент 5</a></li>
+                <li><a href="#">Элемент 6</a></li>
+            </ul>
         </div>
-    </header>
-    <main>
-    </main>
-</body>
+    </div>
+    
+    </body>
 </html>

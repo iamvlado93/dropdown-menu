@@ -1,0 +1,65 @@
+@media only screen and (min-width: 820px) {
+  nav {
+    display: none;
+  }
+  
+  .mega_menu {
+    width: 100%;
+    height: 60px;
+    display: block;
+  }
+  
+  .mega_menu ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    @include black;
+    text-align: center;
+    line-height: 59px;
+    position: relative;
+  }
+  
+  .mega_menu ul li {
+    margin: 0 15px;
+    padding: 0 15px;
+  }
+
+  .mega_menu ul li a:hover {
+    @include cyan;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.02);
+  }
+  
+  .mega_menu ul li a {
+    text-decoration: none;
+    @include white;
+    border-radius: 10px;
+    font-size: 16px;
+    display: block;
+  }
+  
+  .mega_menu ul li .sub_menu {
+    @include absolute;
+    background: #2c2c2c70;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+    line-height: 24px;
+  }
+  
+  .mega_menu ul li .col .sub_menu-second {
+      @include hidden;
+  }
+  
+  .mega_menu ul li:hover .sub_menu {
+    @include visible;
+  }
+  
+  .mega_menu ul li .col:hover .sub_menu-second {
+    @include visible;
+  }
+}
