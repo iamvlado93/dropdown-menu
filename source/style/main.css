@@ -9,7 +9,7 @@
 
 body {
   height: 100vh;
-  background-image: url(/source/img/background.jpg);
+  background-image: url("https://iamvlado93.github.io/dropdown-menu/source/img/background.jpg");
   background-size: cover;
   opacity: 0.92;
 }
@@ -35,6 +35,10 @@ header {
   width: 100vw;
   overflow: hidden;
   background: #181717;
+}
+
+#arrow {
+  display: none;
 }
 
 .navbar a {
@@ -143,6 +147,15 @@ img {
     width: 3rem;
     height: 2.5rem;
     margin: 15px;
+  }
+  .d-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 95%;
   }
   #arrow {
     display: -webkit-box;
