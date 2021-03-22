@@ -80,8 +80,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: cyan;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 nav ul ul {
@@ -136,10 +134,6 @@ input {
   }
   .mega_menu ul li a:hover {
     color: cyan;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02);
   }
   .mega_menu ul li a {
     text-decoration: none;
